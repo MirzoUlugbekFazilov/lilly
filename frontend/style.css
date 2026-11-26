@@ -79,6 +79,33 @@ header {
     margin-bottom: 1rem;
 }
 
+/* The error box doubles as a warning when a retry eventually succeeded:
+   the data on screen is fine, so red would overstate the problem. */
+.error.warning {
+    background-color: #fff8e1;
+    border-color: #c99700;
+    color: #7a5a00;
+}
+
+.error p {
+    margin: 0 0 0.35rem;
+}
+
+.error p:last-child {
+    margin-bottom: 0;
+}
+
+.controls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.summary {
+    margin: 0 0 0.75rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
 .results table {
     width: 100%;
     border-collapse: collapse;
